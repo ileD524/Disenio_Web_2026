@@ -1,0 +1,29 @@
+	<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<head>
+					<script>
+						var global=100;
+						function uno()
+						{
+							var local_uno=1;
+							alert("Global " +global +” Local “ +local_uno);
+							dos();
+						}
+ 
+						function dos()
+						{
+							var local_dos=2;
+							alert("Global " +global +” Local “ +local_dos);
+						}
+					</script>
+ 
+					<title>Autor:Curso Titulación</title>
+				</head>
+ 
+				<body onload="uno();">
+				</body>
+</html>

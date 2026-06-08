@@ -5,11 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola esta es mi pagina web</title>
-</head><body>
-    <h1>Buen día</h1>
-        <h2>Hola</h2>
-        <h3>weeppp</h3>
-<input type="date"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #85acff;
+        }
 
+        h1 {
+            color: #120c85;
+            font-size: 150px;
+        }
+    </style>
+</head>
+<body onload="hola();" onbeforeunload="adios(event);">
+    <h1>DISEÑO WEB</h1>
+    <h2>Hola</h2>
+    <h3>hola...</h3>
+    <input type="date">
+
+    <script>
+        function hola() {
+            alert("Hola a todos");
+        }
+        // no deja poner chau el navegador, pero se puede poner esto, que da una alerta generica del navegador
+        function adios(event) {
+            event.preventDefault();
+            event.returnValue = "";
+        }
+    </script>
 </body>
 </html>
