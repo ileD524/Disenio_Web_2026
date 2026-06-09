@@ -1,0 +1,47 @@
+<!-- 
+EJERCICIO 2 - Creación de una galería de imágenes: 
+Inserta varias imágenes en una página HTML y utiliza
+CSS para organizarlas en una cuadrícula. Aplica estilos como bordes y sombras para mejorar
+el aspecto visual.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejercicio 2 - Galería de imágenes con HTML y CSS">
+    <title>Ejercicio 2 - Galería de Imágenes</title>
+    <style>
+        body {
+            background-color: #fff0f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff69b4;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border: 5px solid #ff69b4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galería de Imágenes</h1>
+    <div class="gallery">
+        <img src="imagen/descarga(1).jpg" alt="Imagen 1">
+        <img src="imagen/descarga(2).jpg" alt="Imagen 2">
+        <img src="imagen/descarga(3).jpg" alt="Imagen 3">
+        <img src="imagen/descarga(4).jpg" alt="Imagen 4">
+    </div>
+</body>
+</html>
