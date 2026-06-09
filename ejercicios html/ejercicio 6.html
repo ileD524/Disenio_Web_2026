@@ -1,0 +1,70 @@
+<!-- 
+Ejercicio 6 - Sitio ficticio
+Crear una mini web de una tienda o blog con:
+- Título, navegación, contenido en secciones, una tabla de precios, imágenes y un pie de página.
+- Uso de al menos 3 etiquetas semánticas, 3 atributos globales y estilos embebidos con style.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejercicio 6 - Mini web de una tienda o blog con HTML">
+    <title>Ejercicio 6 - Mini web de tienda</title>
+</head>
+<body>
+    <header style="background-color: #f8b400; padding: 20px;">
+        <h1 style="color: white;">Tienda de Electrónica</h1>
+    </header>
+    <nav style="background-color: #333; padding: 10px;">
+        <ul style="list-style: none; display: flex; gap: 20px;">
+            <li><a href="#productos" style="color: white; text-decoration: none;">Productos</a></li>
+            <li><a href="#ofertas" style="color: white; text-decoration: none;">Ofertas</a></li>
+            <li><a href="#contacto" style="color: white; text-decoration: none;">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="productos" style="padding: 20px;">
+            <h2>Productos Destacados</h2>
+            <article style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+                <h3>Smartphone XYZ</h3>
+                <p>El último modelo con características impresionantes.</p>
+                <img src="imagen/smartphone.png" alt="Imagen del Smartphone XYZ" style="width: 200px;">
+            </article>
+            <article style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+                <h3>Portátil ABC</h3>
+                <p>Ideal para trabajo y entretenimiento.</p>
+                <img src="imagen/laptop.png" alt="Imagen del Portátil ABC" style="width: 200px;">
+            </article>
+        </section>
+        <section id="ofertas" style="padding: 20px; background-color: #f0f0f0;">
+            <h2>Ofertas Especiales</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <th style="border: 1px solid #ccc; padding: 10px;">Producto</th>
+                    <th style="border: 1px solid #ccc; padding: 10px;">Precio Original</th>
+                    <th style="border: 1px solid #ccc; padding: 10px;">Precio con Descuento</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 10px;">Smartphone XYZ</td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">$999</td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">$799</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 10px;">Portátil ABC</td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">$1299</td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">$1099</td>
+                </tr>
+            </table>
+        </section>
+        <section id="contacto" style="padding: 20px;">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctanos a través de nuestro correo electrónico: <a href="mailto:info@tiendaelectronica.com" style="color: #f8b400; text-decoration: underline;">info@tiendaelectronica.com</a></p>
+        </section>
+    </main>
+    <footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2026 Tienda de Electrónica. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
