@@ -4,3 +4,44 @@ Practica el uso de selectores avanzados como selectores de
 clase, selectores de descendencia, selectores de hijos directos, etc., para aplicar estilos
 específicos a elementos particulares de tu página.
 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 - Uso de selectores avanzados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container .child {
+            color: #3498db;
+            font-size: 1.2em;
+        }
+        .container > .direct-child {
+            color: #e74c3c;
+            font-size: 1.5em;
+        }
+        .container .child .grandchild {
+            color: #2ecc71;
+            font-size: 1em;
+        }
+    </style>
+</head><body>
+    <h1>Uso de selectores avanzados en CSS</h1>
+    <div class="container">
+        <p class="child">Soy un hijo descendiente</p>
+        <p class="direct-child">Soy un hijo directo</p>
+        <div class="child">
+            <p class="grandchild">Soy un nieto</p>
+        </div>
+    </div>
+</body></html>

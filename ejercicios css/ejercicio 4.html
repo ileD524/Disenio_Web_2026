@@ -4,3 +4,42 @@ Crea cajas de diferentes tamaños y formas utilizando propiedades CSS
 como width, height, border, padding y margin. Experimenta con valores absolutos y
 relativos para entender su comportamiento.
 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Diseño de cajas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 2px solid #3498db;
+            padding: 20px;
+            margin: 20px;
+            background-color: #ecf0f1;
+            display: inline-block;
+            text-align: center;
+            line-height: 150px;
+        }
+        .box.rounded {
+            border-radius: 15px;
+        }
+        .box.large {
+            width: 300px;
+            height: 200px;
+            line-height: 200px;
+        }
+    </style>
+</head><body>
+    <h1>Diseño de cajas en CSS</h1>
+    <div class="box">Caja 1</div>
+    <div class="box rounded">Caja 2</div>
+    <div class="box large">Caja 3</div>
+</body></html>

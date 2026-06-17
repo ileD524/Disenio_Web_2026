@@ -3,3 +3,35 @@ EJERCICIO 6 - Estilización de enlaces:
 Aplica estilos a los enlaces (<a>) de tu página, cambiando
 propiedades como text-decoration, color y hover para mejorar su apariencia y usabilidad.
 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - Estilización de enlaces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+    </style>
+</head><body>
+    <h1>Enlaces estilizados en CSS</h1>
+    <p>En este ejercicio, estamos aplicando estilos a los enlaces para mejorar su apariencia y usabilidad. Hemos cambiado el color de los enlaces a un tono azul y eliminado la decoración de texto predeterminada. Además, al pasar el cursor sobre los enlaces, el color cambia a un tono más oscuro y se subrayan para indicar que son interactivos. Esto mejora la experiencia del usuario al navegar por la página y hace que los enlaces sean más atractivos visualmente.</p>
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+    <a href="#">Enlace 3</a>
+</body></html>
